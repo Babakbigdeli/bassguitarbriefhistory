@@ -1,2 +1,2 @@
 # bassguitarbriefhistory
-A very brief history of bass guitar
+A brief history of bass guitar
