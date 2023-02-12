@@ -7,36 +7,72 @@ html {
   font-family: Verdana, Tahoma, sans-serif;
   }
 
-
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 .introduction {
   font-size: 30px;
   text-align: justify;
   color: #E1F593;
-  height: 77vh;
+  flex-basis: 100%;
+  min-height: 80vh;
 }
+
+.timelineview {
+
+  font-size: 30px;
+  text-align: justify;
+  flex-basis: 100%;
+  min-height: 80vh;
+}
+
+.legendsview {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 30px;
+  text-align: justify;
+  flex-basis: 100%;
+  min-height: 75vh;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-basis: 36%;
+  min-height: 25vh;
+  position: sticky;
+  bottom: 0px;
+  padding-right: 8%;
+  padding-bottom: 2%;
+}
+
+.overflow {
+  text-align: justify;
+  font-size: 30px;
+  color: #E1F593;
+  flex-basis: 64%;
+  min-height: 25vh;
+
+}
+
+
 
 .introduction>p {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.container {
-  height: 77vh;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-around;
-}
-
 
 div.legend {
   height: 300px;
   width: 500px;
-  /* border-style: solid;
-  border-width: 2px;
-  border-color: #E1F593; */
-  /* border-radius: 25px; */
   text-align: center;
 }
 
@@ -58,11 +94,7 @@ button {
 }
 
 h1 {
-  background: -webkit-linear-gradient(to right, #010108 0%, #E1F593 38%);
-  background: -moz-linear-gradient(to right, #010108 0%, #E1F593 38%);
-  background: linear-gradient(to right, #010108 0%, #E1F593 38%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #E1F593;
   padding-left: 30px; 
 
 } 
@@ -70,24 +102,13 @@ h1 {
 h2 {
   margin: unset;
   text-decoration: underline;
+  color: hsl(0, 0%, 98%)
 }
 
 h2:hover {
   font-size: 30px;
 }
 
-.overflow {
-  position: fixed;
-  width: 70vw;
-  height: 23vh;
-  bottom: 0;
-  right: 0;
-  text-align: justify;
-  font-size: 30px;
-  color: #E1F593;
-  /* background-color: aqua; */
-
-}
 
 p {
   margin: unset;
@@ -100,18 +121,6 @@ a {
   color: #010108
 }
 
-.navigation {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  padding-left: 380px;
-  margin-top: none;
-  width: 30vw;
-  height: 23vh;
-  /* background-color: rgb(68, 168, 107); */
-
-}
-
 *,
 *::before,
 *::after {
@@ -120,7 +129,7 @@ a {
   box-sizing: border-box;
 }
 
-.timeline>h1 {
+.timelineview>h1 {
   text-align:center;
 }
 
